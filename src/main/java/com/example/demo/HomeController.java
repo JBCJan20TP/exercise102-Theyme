@@ -9,6 +9,7 @@ public class HomeController {
 @RequestMapping("/")
     public String homepage(Model model){
     model.addAttribute("myvar","The ball is flat");
+    model.addAttribute("myball", "Ball needs pump");
     return "balltemplate";
 }
 
